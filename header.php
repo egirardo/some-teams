@@ -1,5 +1,5 @@
 <?php
-$title = "Professional Women's Soccer Teams";
+$title = "Professional Football Teams";
 require "data.php";
 ?>
 
@@ -19,9 +19,19 @@ require "data.php";
 <body>
     <header>
         <h1 class="title"><?php echo $title ?></h1>
-        <nav class="nav-bar">
-            <a href="<?php echo "index.php" ?>">Home</a>
-            <a href="<?php echo "about.php" ?>">About</a>
-            <a href="">Teams</a>
-        </nav>
+        <div class="navigation">
+            <nav class="nav-bar">
+                <a href="index.php">Home</a>
+                <a href="about.php">About</a>
+                <a href="teams.php">Teams</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Teams</button>
+                    <div class="dropdown-content">
+                        <?php foreach ($teams as $id => $value): ?>
+                            <a href="teams.php?id=<?php echo $id; ?>"><?php echo $id; ?></a>
+                        <?php endforeach; ?>
+                    </div>
+
+            </nav>
+        </div>
     </header>

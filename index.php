@@ -2,10 +2,11 @@
 require "data.php"; ?>
 
 <div class="teams-container">
-    <?php foreach ($teams as $key => $value) { ?>
+    <?php foreach ($teams as $id => $value) { ?>
         <div class="team-icon">
             <a src=""></a>
             <img class="team-logo" src="<?= $value['logo']; ?>" alt="Logo">
+            <h1><?php echo $id ?></h1>
         </div>
     <?php } ?>
 </div>
