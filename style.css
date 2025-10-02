@@ -1,10 +1,50 @@
 :root {
     --primary-color:  #001524ff;
+    --secondary-color: #e0e1ddff;
+    --heading-font: "Shrikhand";
 }
 * {
     box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    z-index: 1;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 15px;
+    width: 98%;
+}
+
+.title {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: 5px, 5px, 5px, 5px;
+}
+
+.nav-bar {
+    padding: 5px;
+}
+
 body {
     background-color: var(--primary-color);
+}
+
+.teams-container {
+    margin-top: 20px;
+}
+
+.team-logo {
+    display:inline-block;
+    justify-content: center;
+    max-width: 15%;
+    min-width: 15%;
+    border-radius: 15px;
+    background-color: #e0e1ddff;
+    padding: 10px;
+    margin: 10px;
+}
+.team-logo:hover {
+    box-shadow: 5px 5px 5px 1px red;
+    min-width: 16%;
 }
