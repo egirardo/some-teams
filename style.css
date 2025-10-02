@@ -1,0 +1,10 @@
+:root {
+    --primary-color:  #001524ff;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+}
