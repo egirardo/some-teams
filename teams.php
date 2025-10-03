@@ -7,7 +7,7 @@ $team = $teams[$id];
 ?>
 
 <div class="team-info">
-    <h1><?php echo $id; ?></h1>
+    <h1 class="name"><?php echo $id; ?></h1>
 </div>
 
 <?php require "footer.php";
