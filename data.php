@@ -17,7 +17,7 @@ $teams = [
         ]
     ],
     'Chelsea' => [
-        'league' => 'Women\’s Super League (England)',
+        'league' => "Women’s Super League (England)",
         'uefa-coefficient-ranking' => 3,
         'city' => 'London',
         'url' => 'https://www.chelseafc.com/',
@@ -137,7 +137,7 @@ $teams = [
         ]
     ],
     'Arsenal' => [
-        'league' => 'Women\’s Super League (England)',
+        'league' => "Women’s Super League (England)",
         'uefa-coefficient-ranking' => 6,
         'city' => 'London',
         'url' => 'https://www.arsenal.com/',
@@ -257,7 +257,7 @@ $teams = [
         ]
     ],
     'Manchester United' => [
-        'league' => 'Women\’s Super League (England)',
+        'league' => "Women’s Super League (England)",
         'uefa-coefficient-ranking' => 27,
         'city' => 'Manchester',
         'url' => 'https://www.manutd.com/en/news/women',
