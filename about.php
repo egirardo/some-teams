@@ -1,4 +1,7 @@
-<?php require "header.php"; ?>
+<?php
+define("TITLE", "About");
+require "header.php";
+?>
 <div class="about">
     <h1>About Me</h1>
 

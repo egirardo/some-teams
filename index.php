@@ -1,10 +1,12 @@
-<?php require "header.php";
-require "data.php"; ?>
+<?php
+define("TITLE", "Home");
+require "header.php";
+require "data.php";
+?>
 
 <div class="teams-container">
     <?php foreach ($teams as $id => $value) { ?>
         <div class="team-icon">
-            <!-- <a src=""></a> -->
             <a class="logo-link" href="teams.php?id=<?php echo $id; ?>">
                 <img class="team-logo" src="<?= $value['logo']; ?>" alt="Logo">
             </a>
