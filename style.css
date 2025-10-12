@@ -7,12 +7,13 @@
 }
 * {
     box-sizing: border-box;
+    border: 1px dotted pink
 }
 
 header {
     position: fixed;
     z-index: 1;
-    background-color: rgba(9, 9, 121, 1);
+    background-color: rgb(217, 91, 91);
     height: 25px;
     width: 100%;
     top: 0;
@@ -87,31 +88,32 @@ body {
 
 .team-icon {
     margin-top: 25px;
-    display: flex 1;
-    float: left;
+    display: flex ;
+    flex-direction: column;
     background-color: var(--tertiary-color);
     border-radius: 15px;
-    min-width: 15%;
-    max-width: 15%;
-    max-height: 200px;
-    justify-content: center;
+    width: 200px;
+    height: 200px;
+    justify-content:center;
     margin: 6px;
-    align-items: space-evenly;
+    align-content: center;
 }
 
 .team-logo {
-    max-width: 80%;
-    max-height: 80%;
-    padding: 10%;
-    margin: 10%;
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 10px;
+    align-self: center;
 }
 .team-name {
+    position: relative;
+    bottom: 5px;
     color: var(--secondary-color);
     font-family: var(--secondary-font);
     font-size: 18px;
     text-align: center;
-    z-index: 1;
     color:#090979;
+    bottom: 5px;
 }
 .team-icon:hover {
     box-shadow: 5px 5px 5px 1px blue;
@@ -120,7 +122,7 @@ body {
     margin-top: 175px;
 }
 footer {
-    position: fixed;
+    
     color: var(--secondary-color);
     font-family: var(--secondary-font);
     text-align: center;
