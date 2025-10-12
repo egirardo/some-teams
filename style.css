@@ -1,7 +1,9 @@
+/* Global Styling */
 :root {
     --primary-color:  #090979;
-    --secondary-color: #e0e1ddff;
+    --secondary-color: rgb(226, 236, 245);
     --tertiary-color: white;
+    --accent-color: rgb(176, 60, 60);
     --heading-font: "Shrikhand";
     --primary-font: "Kanit";
 }
@@ -10,9 +12,24 @@
     border: 1px dotted pink
 }
 
-h1, h2, p, a {
+h1, h2, p, a, li {
     font-family: var(--primary-font);
 }
+
+body {
+    background: #1b153d;
+    background: linear-gradient(0deg, rgba(27, 21, 61, 1) 0%, rgba(0, 88, 176, 1) 27%, rgba(255, 255, 255, 1) 100%);
+    background-size: 100% 100%;
+    justify-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.teams-container, .team-info, .about {
+    margin-top: 8%;
+}
+
+/* Header/Footer Styling */
 header {
     position: fixed;
     display: flex;
@@ -20,8 +37,7 @@ header {
     flex-wrap: wrap;
     align-content: center;
     z-index: 1;
-    background-color: var(--tertiary-color);
-    height: 25px;
+    background-color: var(--secondary-color);
     width: 100vw;
     top: 0;
     height: 10%;
@@ -91,20 +107,22 @@ header {
     border-radius: 10px;
 }
 
-body {
-    background: #1b153d;
-    background: linear-gradient(0deg,rgba(27, 21, 61, 1) 0%, rgba(0, 88, 176, 1) 27%, rgba(242, 252, 255, 1) 100%);
-    background-size: 100% 100%;
-    justify-items: center;
-    justify-content: center;
-    min-height: 100vh;
+footer {
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    text-align: center;
+    bottom: 0;
+    padding: 8px;
+    height: 5%;
+    width: 100vw;
 }
+
+/* Home page */
 
 .teams-container {
     display: flex;
     flex-wrap: wrap;
     flex-basis: auto;
-    margin-top: 8%;
     max-width: 100vw;
     justify-content: space-evenly;
 }
@@ -143,32 +161,84 @@ body {
     font-size: 18px;
     text-align: center;
     align-self: center;
-    color:#090979;
+    color: var(--primary-color);
     bottom: 5px;
 }
 .team-icon:hover {
-    box-shadow: 5px 5px 5px 1px blue;
-}
-.about {
-    margin-top: 175px;
-}
-footer {
-    color: var(--secondary-color);
-    font-family: var(--primary-font);
-    text-align: center;
-    bottom: 0;
-    padding: 8px;
-    /* background-color: #090979; */
-    height: 5%;
-    width: 100vw;
+    box-shadow: 5px 5px 5px 1px var(--accent-color);
 }
 
+/* Team Page Styling */
 .team-info {
-    margin-top: 150px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
-.team-info h1 {
-    text-align: left;
+.team-header {
     display: flex;
-    float: left;
-    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 30vh;
+    width: 60vw;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.name {
+    max-height: 30vh;
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.logo-container {
+    max-height: 30vh;
+    max-width: 30vh;
+    align-self: center;
+    align-items: center;
+}
+
+.logo-team-pg {
+    max-height: 12rem;
+    max-width: 12rem;
+    padding: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    height: 60vh;
+    width: 60vw;
+    color: var(--primary-color);
+    margin: 10px;
+    min-width: 30%;
+}
+
+.info-container h2 {
+    font-size: 1.6rem;
+}
+
+.info-container p, li {
+    font-size: 1rem;
+}
+
+.info-left, .info-right {
+    margin-top: 10px;
+    max-height: 100%;
+    max-width: 50%;
+}
+
+.line-container {
+    height: 90%;
+    width: 3px;
+    background-color: var(--primary-color);
+    align-self: center;
 }
