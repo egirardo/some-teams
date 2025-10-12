@@ -5,7 +5,9 @@ require "data.php"; ?>
     <?php foreach ($teams as $id => $value) { ?>
         <div class="team-icon">
             <!-- <a src=""></a> -->
-            <img class="team-logo" src="<?= $value['logo']; ?>" alt="Logo">
+            <a class="logo-link" href="teams.php?id=<?php echo $id; ?>">
+                <img class="team-logo" src="<?= $value['logo']; ?>" alt="Logo">
+            </a>
             <h1 class="team-name"><?php echo $id ?></h1>
         </div>
     <?php } ?>
