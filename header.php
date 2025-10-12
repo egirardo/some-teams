@@ -1,5 +1,5 @@
 <?php
-$title = "Professional Football Teams";
+$title = "UEFA Women's Champions League";
 require "data.php";
 ?>
 
@@ -23,9 +23,8 @@ require "data.php";
             <nav class="nav-bar">
                 <a href="index.php">Home</a>
                 <a href="about.php">About</a>
-                <a href="teams.php">Teams</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Teams</button>
+                    <a class="dropbtn">Teams</a>
                     <div class="dropdown-content">
                         <?php foreach ($teams as $id => $value): ?>
                             <a href="teams.php?id=<?php echo $id; ?>"><?php echo $id; ?></a>
