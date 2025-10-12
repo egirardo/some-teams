@@ -18,7 +18,9 @@ require "data.php";
 
 <body>
     <header>
-        <h1 class="title"><?php echo $title ?></h1>
+        <a href="index.php">
+            <h1 class="title"><?php echo $title ?></h1>
+        </a>
         <div class="navigation">
             <nav class="nav-bar">
                 <a class="nav-link" href="index.php">Home</a>
