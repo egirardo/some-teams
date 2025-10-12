@@ -8,7 +8,7 @@ require "data.php";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title; ?></title>
+    <title><?php echo TITLE; ?></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
