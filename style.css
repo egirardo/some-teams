@@ -12,50 +12,68 @@
 
 header {
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     z-index: 1;
-    background-color: rgb(217, 91, 91);
+    background-color: rgb(80, 106, 238);
     height: 25px;
-    width: 100%;
+    width: 100vw;
     top: 0;
     height: 20%;
 }
 
 .title {
-    font-family: var(--heading-font);
+    position: absolute;
+    align-self: center;
+    font-family: var(--secondary-font);
     color: var(--secondary-color);
+    font-weight: 800;
     padding: 5px, 5px, 5px, 5px;
     margin: 10px;
     text-align: left;
 }
 
+.nav-link:visited {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-link {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
 .nav-bar {
+    position: absolute;
+    align-self: center;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 5px;
     font-family: var(--secondary-font);
 }
-.dropbtn {
-  color: var(--primary-color);
-  padding: 16px;
-  border: none;
-  background-color: var(--secondary-color);
-  font-family: var(--secondary-font);
-  cursor: pointer;
-}
+
 .dropdown {
-  position: relative;
-  background-color: var(--secondary-color)
+    margin-top: 5px;
+    position: relative;
 }
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--secondary-color);
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    justify-content: space-between;
+    right: 0;
+    background-color: var(--secondary-color);
+    min-width: 90vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown-content a {
-  color: var(--primary-color);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
+    color: var(--primary-color);
+    padding: 12px 16px;
+    text-decoration: none;
 }
 .dropdown-content a:hover {
     background-color: whitesmoke;
@@ -69,8 +87,8 @@ header {
 }
 
 body {
-    background: #090979;
-    background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(101, 1, 138, 1) 44%, rgba(255, 21, 0, 1) 100%);
+    background: #1b153d;
+    background: linear-gradient(0deg,rgba(27, 21, 61, 1) 0%, rgba(0, 88, 176, 1) 27%, rgba(242, 252, 255, 1) 100%);
     background-size: 100% 100%;
     justify-items: center;
     justify-content: center;
@@ -94,7 +112,7 @@ body {
     border-radius: 15px;
     width: 200px;
     height: 200px;
-    justify-content:center;
+    justify-content:space-evenly;
     margin: 6px;
     align-content: center;
 }
@@ -106,12 +124,13 @@ body {
     align-self: center;
 }
 .team-name {
-    position: relative;
+    position: inherit;
     bottom: 5px;
     color: var(--secondary-color);
     font-family: var(--secondary-font);
     font-size: 18px;
     text-align: center;
+    align-self: center;
     color:#090979;
     bottom: 5px;
 }
@@ -122,7 +141,6 @@ body {
     margin-top: 175px;
 }
 footer {
-    
     color: var(--secondary-color);
     font-family: var(--secondary-font);
     text-align: center;
@@ -130,7 +148,7 @@ footer {
     padding: 8px;
     background-color: #090979;
     height: 5%;
-    width: 110%;
+    width: 100vw;
 }
 
 .team-info {

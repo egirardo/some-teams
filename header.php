@@ -21,10 +21,10 @@ require "data.php";
         <h1 class="title"><?php echo $title ?></h1>
         <div class="navigation">
             <nav class="nav-bar">
-                <a href="index.php">Home</a>
-                <a href="about.php">About</a>
+                <a class="nav-link" href="index.php">Home</a>
+                <a class="nav-link" href="about.php">About</a>
                 <div class="dropdown">
-                    <a class="dropbtn">Teams</a>
+                    <a class="nav-link">Teams</a>
                     <div class="dropdown-content">
                         <?php foreach ($teams as $id => $value): ?>
                             <a href="teams.php?id=<?php echo $id; ?>"><?php echo $id; ?></a>
