@@ -137,7 +137,7 @@ header {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     color: var(--secondary-color);
     font-family: var(--primary-font);
     text-align: center;
@@ -289,7 +289,8 @@ hr {
 }
 
 .line-container {
-    height: 35vh;
+    min-height: 30vh;
+    height: 30vh;
     width: 3px;
     background-color: var(--primary-color);
     align-self: center;
