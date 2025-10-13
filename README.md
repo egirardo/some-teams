@@ -8,7 +8,7 @@ I have created a website that displays the teams from the UEFA Women's Champions
 
 **Languages Used:** PHP, CSS
 
-Using the multidimensional array provided by my professor in data.php, I have built a website that displays all of the included information using PHP and CSS. I used the information in the data.php file to create dynamic webpages that populate for each team by creating the teams.php template and linking that to the data within the array. The dynamic pages can be accessed by either clicking the team icons on the home page or using the drop down menu in the header to select the team that you would like to learn more about.
+Using the multidimensional array provided by my professor in data.php, I have built a website that displays all of the included information using PHP and CSS. I used the information in the data.php file to create dynamic webpages that populate for each team by creating the teams.php template and linking that to the data within the array. The dynamic pages can be accessed by either clicking the team icons on the home page or using the drop down menu in the header to select the team that you would like to learn more about. Chat GPT was not used in the creation of this website.
 
 ## Lessons Learned:
 
