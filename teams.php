@@ -19,6 +19,7 @@ if (isset($_GET["id"])) {
         </div>
         <h1 class="name"><?php echo $team; ?></h1>
     </div>
+    <hr>
     <div class="info-container">
         <div class="info-left">
             <div class="league-info">
